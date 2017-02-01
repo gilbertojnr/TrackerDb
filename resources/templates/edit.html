@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Edit beer input here:
+{{#beer}}
+<form action="/edit" method="post">
+    <input type="hidden" value="{{id}}" name="beerId"/>
+    <input type="text" value="{{beerName}}" name="enterBeerName"/>
+    <input type="text" value="{{Brewery}}" name="enterBrewery"/>
+    <input type="text" value="{{Year}}" name="enterYear"/>
+    <input type="text" value="{{State}}" name="enterState"/>
+    <input type="text" value="{{Tasted}}" name="enterTasted"/>
+    <button type="submit" >save</button>
+</form>
+
+{{/beer}
+
+</body>
+</html>
